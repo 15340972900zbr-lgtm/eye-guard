@@ -1,0 +1,16 @@
+# 通知默认关闭。填写你确认的数值后启用，重启应用后生效。
+# continuous_remind_minutes = …    # 连续用眼多少分钟时提醒
+# blink_rate_remind_per_min = …    # 每分钟眨眼次数低于多少时提醒
+# proximity_too_close = …          # 过近时的人脸框面积相对值，须大于 1
+# proximity_too_far = …            # 过远时的人脸框面积相对值，须小于 1
+
+# 摄像头设备及采样配置
+# camera_index = 0
+# analysis_interval_s = 0.1
+# camera_stall_timeout_s = 3.0
+# blink_window_s = 60.0
+# absence_grace_s = 30.0
+# ear_close_threshold = 0.20
+# ear_open_threshold = 0.25
+# calibration_frames = 30
+# reminder_cooldown_s = 300.0

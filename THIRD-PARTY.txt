@@ -1,0 +1,8 @@
+This distribution embeds CPython 3.13.17 from Python.org and binary Python packages from PyPI.
+Component licenses are retained in runtime/LICENSE.txt and the runtime/Lib/site-packages package metadata.
+The package list is available in assets/requirements-windows.txt.
+
+Google MediaPipe Face Landmarker float16 v1
+Documentation and model cards: https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker
+Asset: https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
+SHA-256: 64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff

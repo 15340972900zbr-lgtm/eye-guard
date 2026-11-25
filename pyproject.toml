@@ -1,0 +1,19 @@
+[project]
+name = "eye-guard-windows"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.11"]
+
+[tool.pytest.ini_options]
+pythonpath = ["source"]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 105
+exclude = ["work"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]

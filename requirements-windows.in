@@ -1,0 +1,4 @@
+mediapipe==1.2.3
+opencv-contrib-python==5.1.0.95
+pillow
+pystray==0.19.5
