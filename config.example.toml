@@ -1,0 +1,24 @@
+# 护眼工具配置示例：复制为 config.toml 后按需修改。
+#
+# 红线（见 ITERATION_TASK_SPEC.md）：以下「提醒阈值」均为未确认数值（TBD），
+# 默认禁用；你在 config.toml 中填写即视为本人确认该数值。
+# 相对距离 proximity = 当前人脸框占比 / 校准基准，>1 更近、<1 更远。
+
+# —— 提醒阈值（默认禁用）——
+# continuous_remind_minutes = 20    # 连续用眼提醒分钟数（TBD）
+# proximity_too_close = 1.25        # 相对距离高于此值提醒过近（TBD）
+# proximity_too_far = 0.80          # 相对距离低于此值提醒过远（TBD）
+# blink_rate_remind_per_min = 10    # 眨眼频率低于此值提醒，次/分（TBD）
+
+# —— 机制参数（工程默认值，可调）——
+# ear_close_threshold = 0.20        # EAR 低于此值判定闭眼（自动按画面宽高比校正）
+# ear_open_threshold = 0.25         # EAR 高于此值判定睁眼（迟滞区间）
+# min_closed_frames = 1             # 构成一次眨眼的最少闭眼帧数
+# analysis_interval_s = 0.1         # 分析频率（秒），10 Hz 兼顾低功耗
+# absence_grace_s = 30.0            # 离开宽限期（秒），超过则连续段重置
+# session_gap_reset_s = 60.0        # 断档超过该秒数则连续段重置（累计保留）
+# calibration_frames = 30           # 距离校准采样帧数（约 3 秒）
+# reminder_cooldown_s = 300.0       # 距离/频率类提醒冷却（秒）
+# blink_window_s = 60.0             # 眨眼频率统计窗口（秒）
+# camera_stall_timeout_s = 3.0      # 句柄开但无帧超过该秒数视为故障，自动暂停
+# model_path = "assets/face_landmarker.task"

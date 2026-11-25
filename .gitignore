@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+config.toml
+assets/*.task
+
+# Windows release assets
+*.exe
